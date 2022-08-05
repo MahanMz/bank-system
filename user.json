@@ -1,0 +1,86 @@
+{
+    "cards": [
+        "1400120001",
+        "1400120002",
+        "1400120004",
+        "1400120005"
+    ],
+    "admin": {
+        "password": "admin",
+        "type": "admin",
+        "name": " naser mazareii (OWNER)",
+        "countryCode": "3490564413",
+        "balanceCredit": "1000000",
+        "cards": [
+            "1400120004"
+        ],
+        "history": [
+            [
+                "date",
+                "time",
+                "move - 500",
+                "1400120004",
+                "1400120003"
+            ],
+            [
+                "date",
+                "time",
+                "move - 500",
+                "1400120004",
+                "1400120003"
+            ]
+        ]
+    },
+    "myemployee": {
+        "password": "admin",
+        "type": "employee",
+        "name": "employee",
+        "countryCode": "3500544312",
+        "balanceCredit": "1000000",
+        "cards": [
+            "1400120002"
+        ],
+        "history": [
+            [
+                "date",
+                "time",
+                "move - 1000",
+                "1400120002",
+                "1400120003"
+            ]
+        ]
+    },
+    "myuser": {
+        "password": "admin",
+        "type": "user",
+        "name": "user",
+        "countryCode": "3380433201",
+        "balanceCredit": "1002000",
+        "cards": [
+            "1400120005"
+        ],
+        "history": [
+            [
+                "date",
+                "time",
+                "move - 500",
+                "1400120004",
+                "1400120003"
+            ],
+            [
+                "date",
+                "time",
+                "move - 500",
+                "1400120004",
+                "1400120003"
+            ],
+            [
+                "date",
+                "time",
+                "move - 1000",
+                "1400120002",
+                "1400120003"
+            ]
+        ]
+    }
+}
