@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+background: #d4d4d4;
+border: 3px solid black;
+border-radius: 5px;
+}
+QPushButton:checked{
+background:  #ffe522;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background: #ffe522;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSystem">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>99</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>امور بانکی</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnProfile">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>138</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>حساب کاربری</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEmployees">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>177</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>کارمندان</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frmHeader">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>801</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background: white;
+border: 1 solid black;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>-10</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>logo1.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>20</y>
+       <width>621</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+background: #ffe522;
+border: 5px solid black;
+border-radius: 15px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnUsers">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>216</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>کاربران</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnExit">
+    <property name="geometry">
+     <rect>
+      <x>761</x>
+      <y>-1</y>
+      <width>41</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+border: 2px solid black;
+background:  #ffe522;
+border-radius: 0px;
+}
+QWidget:hover{
+color: white;
+background: red;
+}</string>
+    </property>
+    <property name="text">
+     <string>×</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMaximize">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>722</x>
+      <y>-1</y>
+      <width>41</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+border: 2px solid black;
+background:  #ffe522;
+border-radius: 0px;
+}
+QWidget:hover{
+color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>□</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMinimize">
+    <property name="geometry">
+     <rect>
+      <x>683</x>
+      <y>-1</y>
+      <width>41</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+border: 2px solid black;
+background:  #ffe522;
+border-radius: 0px;
+}
+QWidget:hover{
+color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frmUser">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>651</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background: white;
+border: 1 solid black;
+}
+QLineEdit{
+background: #d4d4d4;
+border-radius: 3px;
+}
+QPushButton{
+background: #d4d4d4;
+border-radius: 3px;
+}
+QLabel{
+background: #d4d4d4;
+border-radius: 3px;
+}
+QComboBox{
+background: #d4d4d4;
+border-radius: 3px;
+}
+QTableWidget{
+background-color: #d4d4d4;
+border-radius: 2px;
+
+}
+QHeaderView::section{
+background-color: #c6c6c6;
+font-size: 10pt;
+border: 1px solid #c6c6c6;
+}
+QHeaderView{
+background-color: #c6c6c6;
+border-radius: 2px;
+}
+QScrollBar{
+background : darkgray;
+}
+QScrollBar::handle{
+background : #8a8a8a;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="linUserName">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>20</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>نام و نام خانوادگی</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnEnterRemcard">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>حذف کارت</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>10</y>
+       <width>71</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cmbEnterCards">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>انتخاب نشده(حساب)</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="linUserConcode">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>60</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>کد ملی</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnEnterName">
+     <property name="geometry">
+      <rect>
+       <x>414</x>
+       <y>120</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="linEnterName">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>120</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>نام و نام خانوادگی</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnMore">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnEnterAddcard">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>60</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>افزودن حساب</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnEnterReload">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>بارگیری مجدد</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tblEnter">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>631</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="verticalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <property name="showGrid">
+      <bool>true</bool>
+     </property>
+     <property name="rowCount">
+      <number>0</number>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>140</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>تاریخ</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ساعت</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>عملیات</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>از حساب</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>به حساب</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frmProfile">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>651</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background: white;
+border: 1 solid black;
+}
+QLineEdit{
+background: #d4d4d4;
+border-radius: 3px;
+}
+QPushButton{
+background: #d4d4d4;
+border-radius: 3px;
+}
+QLabel{
+background: #d4d4d4;
+border-radius: 3px;
+}
+QComboBox{
+background: #d4d4d4;
+border-radius: 3px;
+}
+QTableWidget{
+background-color: #d4d4d4;
+border-radius: 2px;
+
+}
+QHeaderView::section{
+background-color: #c6c6c6;
+font-size: 10pt;
+border: 1px solid #c6c6c6;
+}
+QHeaderView{
+background-color: #c6c6c6;
+border-radius: 2px;
+}
+QScrollBar{
+background : darkgray;
+}
+QScrollBar::handle{
+background : #8a8a8a;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="linProName">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>20</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>نام و نام خانوادگی</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblProPic">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>10</y>
+       <width>71</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cmbProCards">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>انتخاب نشده(حساب)</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="btnProAddcard">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>60</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>افزودن حساب</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="linProConcode">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>60</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>کد ملی</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="linProSendname">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>160</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>نام و نام خانوادگی گیرنده</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="linProSendcard">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>195</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>شماره حساب گیرنده</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="linProSendprice">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>230</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>مبلغ (ریال)</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnProSend">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>265</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>انتقال</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnProReload">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>بارگیری مجدد</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tblProfile">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>451</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>140</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>تاریخ</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ساعت</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>عملیات</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>از حساب</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>به حساب </string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="btnLogout">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>خروج</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnProRemcard">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>حذف کارت</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stack">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>99</y>
+      <width>651</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frmBlank">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>651</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background: white;
+border: 1px solid black;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frmSystem">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>651</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background: white;
+border: 1 solid black;
+}
+QLineEdit{
+background: #d4d4d4;
+border-radius: 3px;
+}
+QPushButton{
+background: #d4d4d4;
+border-radius: 3px;
+}
+QLabel{
+border: 4px solid black;
+border-radius: 7px;
+}
+QComboBox{
+background: #d4d4d4;
+border-radius: 3px;
+}
+QTableWidget{
+background-color: #d4d4d4;
+border-radius: 2px;
+
+}
+QHeaderView::section{
+background-color: #c6c6c6;
+font-size: 10pt;
+border: 1px solid #c6c6c6;
+}
+QHeaderView{
+background-color: #c6c6c6;
+border-radius: 2px;
+}
+QScrollBar{
+background : darkgray;
+}
+QScrollBar::handle{
+background : #8a8a8a;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="linSysName">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>100</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>نام و نام خانوادگی</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSysPower">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>30</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+background: #d4d4d4;
+border-radius: 3px;
+}
+QWidget:checked{
+background: #ffe522;
+}</string>
+     </property>
+     <property name="text">
+      <string>سامانه فعال</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSysSearch">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>180</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>جستجو</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="linSysTrackingcode">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>140</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>کد رهگیری</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="linSysConcode">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>100</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>کد ملی</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="linSysAtdate">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>140</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>از تاریخ</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="linSysTodate">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>140</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>تا تاریخ</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tblSystem">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>631</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="verticalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <property name="rowCount">
+      <number>0</number>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>130</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>تاریخ</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ساعت</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>عملیات</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>از حساب</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>به حساب</string>
+      </property>
+     </column>
+    </widget>
+    <zorder>tblSystem</zorder>
+    <zorder>linSysName</zorder>
+    <zorder>btnSysPower</zorder>
+    <zorder>btnSysSearch</zorder>
+    <zorder>linSysTrackingcode</zorder>
+    <zorder>linSysConcode</zorder>
+    <zorder>linSysAtdate</zorder>
+    <zorder>linSysTodate</zorder>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>580</y>
+      <width>801</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background: #ffe522;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>frmUser</zorder>
+   <zorder>stack</zorder>
+   <zorder>frmProfile</zorder>
+   <zorder>frmBlank</zorder>
+   <zorder>frmSystem</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>btnExit</zorder>
+   <zorder>btnMaximize</zorder>
+   <zorder>btnMinimize</zorder>
+   <zorder>frmHeader</zorder>
+   <zorder>btnEmployees</zorder>
+   <zorder>btnSystem</zorder>
+   <zorder>btnUsers</zorder>
+   <zorder>btnProfile</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
